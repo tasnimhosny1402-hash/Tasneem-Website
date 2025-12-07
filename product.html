@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Care Sections</title>
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('p1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #fff4e6;
+    text-align: center;
+    color: brown;
+}
+
+h1 {
+    font-size: 32px;
+    margin: 50px 0 40px 0;
+}
+
+.main-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+button {
+    position: relative;
+    padding: 20px 35px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    background-size: 200% 200%;
+    background-position: 0% 50%;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+#hair {
+    background: linear-gradient(45deg, #ff9eb5, #ff77a9, #ffb3c6, #ff85b1);
+    animation: gradientMove 5s ease infinite;
+}
+
+#skin {
+    background: linear-gradient(45deg, #ff85b1, #ff9eb5, #ffb3c6, #ff77a9);
+    animation: gradientMove 5s ease infinite;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.bottom-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+/* Stylish Buttons */
+.bottom-buttons button {
+    background: linear-gradient(45deg, #ff77a9, #ffb3c6);
+    padding: 15px 30px;
+    font-weight: bold;
+    color: white;
+    border-radius: 12px;
+    cursor: pointer;
+    border: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.bottom-buttons button:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 16px rgba(255, 119, 169, 0.5);
+    background: linear-gradient(45deg, #ffb3c6, #ff77a9);
+}
+</style>
+</head>
+<body>
+
+<h1>Choose Your Care</h1>
+
+<div class="main-buttons">
+    <button id="hair" onclick="window.location.href='hair.html'">Hair Care</button>
+    <button id="skin" onclick="window.location.href='skin.html'">Skin Care</button>
+</div>
+
+<div class="bottom-buttons">
+    <!-- Back to Home button -->
+    <button onclick="window.location.href='index.html'">Back to Home</button>
+
+    <!-- Go to Checkout button -->
+    <button onclick="window.location.href='Check.html'">Go to Checkout</button>
+</div>
+
+</body>
+</html>
+
+

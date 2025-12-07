@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skin Care Products</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-image: url('b2.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: brown;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 32px;
+        margin: 50px 0;
+        color: white;
+    }
+
+    table {
+        width: 80%;
+        margin: 0 auto;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        padding: 20px;
+        border: 1px solid #ddd;
+        text-align: center;
+    }
+
+    th {
+        background-color: #ff85b1;
+        color: white;
+    }
+
+    td {
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    td:nth-child(1), td:nth-child(3) {
+        background: linear-gradient(45deg, #ff9eb5, #ff77a9, #ffb3c6, #ff85b1);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+    td img {
+        max-width: 150px;
+        border-radius: 10px;
+    }
+
+    .button-container {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    /* Unified Buttons Style */
+    .pretty-btn {
+        padding: 15px 35px;
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+        background: linear-gradient(45deg, #ff77a9, #ffb3c6);
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+        transition: transform 0.3s, box-shadow 0.3s;
+        box-shadow: 0 6px 12px rgba(255, 105, 155, 0.4);
+    }
+
+    .pretty-btn:hover {
+        transform: scale(1.08);
+        box-shadow: 0 10px 22px rgba(255, 105, 155, 0.6);
+        background: linear-gradient(45deg, #ff9eb5, #ff77a9);
+    }
+
+    .back-button {
+        margin-top: 20px;
+        padding: 15px 35px;
+        font-size: 18px;
+        background: linear-gradient(45deg, #ff77a9, #ffb3c6);
+        color: white;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .back-button:hover {
+        transform: scale(1.08);
+        background: linear-gradient(45deg, #ff9eb5, #ff77a9);
+    }
+</style>
+</head>
+<body>
+
+<h1>Skin Care Products</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Product Name</th>
+            <th>Product Image</th>
+            <th>Price (OMR)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Toner</td>
+            <td><img src="toner2.jpg" alt="Toner"></td>
+            <td>20 OMR</td>
+        </tr>
+        <tr>
+            <td>Moisturizer</td>
+            <td><img src="mosto.jpg" alt="Moisturizer"></td>
+            <td>30 OMR</td>
+        </tr>
+        <tr>
+            <td>Cleanser</td>
+            <td><img src="Cleanser.jpg" alt="Cleanser"></td>
+            <td>25 OMR</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="button-container">
+    <button class="pretty-btn" onclick="window.location.href='index.html'">Back to Home</button>
+    <button class="pretty-btn" onclick="window.location.href='products.html'">Back to Products</button>
+    <button class="pretty-btn" onclick="window.location.href='Check.html'">Go to Checkout</button>
+</div>
+
+<!-- Back Button to return to previous page -->
+<button class="back-button" onclick="window.history.back()">Back</button>
+
+</body>
+</html>
